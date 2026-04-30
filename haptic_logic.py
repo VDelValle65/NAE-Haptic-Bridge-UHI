@@ -8,17 +8,15 @@ LEGAL: Copyright (c) 2026 Neuro-Art for Seniors, LLC
 # Version: 1.1.0-Alpha (Timestamped: 2026-04-30)
 # Purpose: Mitigation of Synaptic Pruning via Haptic-Visual Loops
 
-# --- Top Substrate: Tactile Pegboard ---
-PEG_GRID_WIDTH = 16
-PEG_GRID_HEIGHT = 12
-TOTAL_TACTILE_NODES = 192 # Optimized for cognitive friction reduction
+# --- NAE™ HARDWARE CALIBRATION ---
+# Primary Substrate: 12x16 Tactile Matrix
+# Secondary Substrate: 4x5 Display Interface
 
-# --- Center Substrate: Vector Radar Screen ---
-RADAR_WIDTH_IN = 5
-RADAR_HEIGHT_IN = 4
-RADAR_RESOLUTION_X = 160 # Calibrated for high-fidelity vector tracking
-RADAR_RESOLUTION_Y = 120
+PEGBOARD_COLS = 16
+PEGBOARD_ROWS = 12
 
+SECONDARY_DISPLAY_WIDTH = 5  # Physical dimension (inches)
+SECONDARY_DISPLAY_HEIGHT = 4 # Physical dimension (inches)
 # --- Bottom Substrate: Categorical Logic Row ---
 # Multi-morphic feedback triggers
 LOGIC_TRIGGERS = {
