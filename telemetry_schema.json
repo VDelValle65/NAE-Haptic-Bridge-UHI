@@ -1,1 +1,46 @@
+​You​
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NAE™ Ocular-Motor Latency Log",
+  "description": "Clinical telemetry data for Biaxial Rotary Modulation sessions.",
+  "type": "object",
+  "properties": {
+    "session_metadata": {
+      "type": "object",
+      "properties": {
+        "principal_researcher": { "type": "string", "const": "Valerie A. Del Valle" },
+        "entity": { "type": "string", "const": "Neuro-Art for Seniors, LLC" },
+        "protocol_version": { "type": "string", "default": "1.0.0" },
+        "timestamp_utc": { "type": "string", "format": "date-time" }
+      },
+      "required": ["principal_researcher", "entity", "timestamp_utc"]
+    },
+    "telemetry_data": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "coordinate_vector": {
+            "type": "array",
+            "prefixItems": [
+              { "type": "integer", "minimum": 0, "maximum": 31 },
+              { "type": "integer", "minimum": 0, "maximum": 31 }
+            ]
+          },
+          "latency_ms": { 
+            "type": "number", 
+            "description": "Ocular-motor response time in milliseconds." 
+          },
+          "haptic_viscosity_level": { 
+            "type": "number", 
+            "minimum": 1.0, 
+            "maximum": 5.0 
+          }
+        },
+        "required": ["coordinate_vector", "latency_ms"]
+      }
+    }
+  },
+  "required": ["session_metadata", "telemetry_data"]
+}
 
