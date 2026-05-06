@@ -1,8 +1,9 @@
 """
 NAE™ PROTOCOL: SYSTEM ARCHITECTURE
-PRINCIPAL RESEARCHER: Valerie A. Del Valle
 PROJECT: Universal Haptic Interface (UHI)
-LEGAL: Copyright (c) 2026 Neuro-Art for Seniors, LLC
+PRINCIPAL RESEARCHER: Valerie A. Del Valle
+(ORCID: 0009-0004-5294-7981)
+#License: MIT- Copyright (c) 2026 Neuro-Art for Seniors, LLC
 """
 # NAE™ Protocol - Handheld Instrument Specifications
 # Version: 1.1.0-Alpha (Timestamped: 2026-04-30)
