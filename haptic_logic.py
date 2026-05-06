@@ -6,7 +6,7 @@ PRINCIPAL RESEARCHER: Valerie A. Del Valle
 #License: MIT- Copyright (c) 2026 Neuro-Art for Seniors, LLC
 """
 # NAE™ Protocol - Handheld Instrument Specifications
-# Version: 1.1.0-Alpha (Timestamped: 2026-04-30)
+# Version: 1.1.1 (Revised: 2026-05-06)
 # Purpose: Mitigation of Synaptic Pruning via Haptic-Visual Loops
 
 # --- NAE™ HARDWARE CALIBRATION ---
@@ -105,7 +105,7 @@ class BiaxialModulator:
         print(f"Calibration Complete. Participant Baseline: {self.mean_baseline:.2f}ms")
         return self.mean_baseline
 
-    def export_latency_log_json(self, protocol_version="1.0.0"):
+    def export_latency_log_json(self, protocol_version="1.1.1"):
         """Export telemetry in telemetry_schema.json-compatible object format."""
         payload = {
             "session_metadata": {
