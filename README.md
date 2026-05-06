@@ -5,7 +5,7 @@ Affiliation: Neuro-Art for Seniors, LLC
 ORCID: 0009-0004-5294-7981
 
 ## Project Overview
-This haptic bridge facilitates the Substrate calibration necessary for the NAE™ Protocol. It focuses exclusively on the Neural Substrates, Dopaminergic Responses, and Ocular-Motor Protocols, facilitating the mitigation of synaptic pruning. Using OpenAI Codex, we engineered the Universal Haptic Interface (UHI): a core proprietary hardware component facilitating biaxial rotary modulation as part of an ocular-motor stimulation protocol for geriatric care.
+This haptic bridge facilitates the Substrate calibration necessary for the NAE™ Protocol. It focuses exclusively on the Neural Substrates, Dopaminergic Responses, and Ocular-Motor Protocols, facilitating the mitigation of synaptic pruning. Using OpenAI Codex, we engineered the Universal Haptic Interface (UHI): a core proprietary hardware component facilitating Biaxial Rotary Modulation as part of an ocular-motor stimulation protocol for geriatric care.
 
 ## Clinical Framework
 The UHI serves as a technical bridge between mechanical input and neural response. By utilizing **Biaxial Rotary Modulation**, the interface engages the primary visual cortex and the pre-cuneus, inducing targeted dopaminergic responses via precise ocular-motor coordination.
