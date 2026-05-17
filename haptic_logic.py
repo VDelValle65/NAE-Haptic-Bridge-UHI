@@ -119,8 +119,10 @@ class BiaxialModulator:
         return json.dumps(payload, indent=2)
 
 
-# Initialize the UHI Engine
-uhi_engine = BiaxialModulator()
-uhi_engine.run_baseline_test()
-print("NAE™ UHI logic initialized. Monitoring Biaxial Rotary Modulation...")
+if __name__ == "__main__":
+    # Initialize the UHI Engine only during direct execution so imports remain side-effect free.
+    uhi_engine = BiaxialModulator()
+    uhi_engine.run_baseline_test()
+    print("NAE™ UHI logic initialized. Monitoring Biaxial Rotary Modulation...")
+
 #Last Modified: 2026-05-06 | Valerie A. Del Valle
