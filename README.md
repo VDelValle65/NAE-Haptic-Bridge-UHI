@@ -14,7 +14,6 @@ The UHI serves as a technical bridge between mechanical input and neural respons
 - **Language:** Python
 - **Engine:** OpenAI Codex
 - **Logic:** `haptic_logic.py`
-- **MAM audit:** `mam_audit.py` exports a 10x10-grid Midpoint Accuracy Metric CSV from reviewed peg coordinates without making clinical or diagnostic inferences.
 - **Substrate:** High-Density LED Stim-Grid
 
 ## Legal & Trademark Attribution
@@ -24,21 +23,3 @@ The UHI serves as a technical bridge between mechanical input and neural respons
 
 ---
 *Developed for the Codex Creator Challenge 2026.*
-
-
-## Midpoint Accuracy Metric (MAM) Audit
-The MAM utility performs an objective geometric audit of a post-session workspace capture. It computes the true horizontal center axis, maps reviewed peg coordinates onto the standardized 10x10 grid, and exports signed, absolute, and grid-normalized midpoint deltas to `MAM_Audit_Results.csv`.
-
-Example:
-
-```python
-from mam_audit import MamAuditConfig, PegPlacement, mam_geometric_audit
-
-rows = mam_geometric_audit(
-    image_dimensions=(1000, 960),
-    detected_pegs=[PegPlacement(peg_id=1, x=300, y=480)],
-    config=MamAuditConfig(output_csv="MAM_Audit_Results.csv"),
-)
-```
-
-The audit is non-invasive and does not infer participant neurological status; it only reports coordinate variance from the midpoint axis for longitudinal review.
